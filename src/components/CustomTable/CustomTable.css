@@ -1,0 +1,32 @@
+.custom-table-wrapper {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.custom-ant-table .ant-table-thead>tr>th {
+    background-color: #f0f2f5;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #111;
+}
+
+.custom-ant-table .ant-table-tbody>tr>td {
+    font-size: 13px;
+    padding: 10px 12px;
+}
+
+.table-row-light {
+    background-color: #ffffff;
+}
+
+.table-row-dark {
+    background-color: #fafafa;
+}
+
+.custom-ant-table .ant-table {
+    border-radius: 10px;
+}
