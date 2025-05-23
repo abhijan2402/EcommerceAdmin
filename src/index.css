@@ -1,5 +1,6 @@
 :root {
-  --bg-color: #e9e9eb;
+  --bg-color: #ffffff;
+  --sidebarbg-color: #F0F8FF;
   /* Subtle light gray background */
   --text-color: #1e293b;
   /* Deep slate for clean readability */

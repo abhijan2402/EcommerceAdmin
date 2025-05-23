@@ -1,6 +1,6 @@
 .sidebar {
     width: 240px;
-    background-color: var(--bg-color);
+    background-color: var(--sidebarbg-color);
     height: 100vh;
     overflow-y: auto;
     transition: width 0.3s ease;
