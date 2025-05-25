@@ -25,7 +25,7 @@ export default function Layout() {
         }}
       >
         <Topbar />
-        <main style={{ padding: "60px 20px 20px" }}>
+        <main style={{ margin: "70px 20px 20px 20px" }}>
           <Outlet />
         </main>
       </div>

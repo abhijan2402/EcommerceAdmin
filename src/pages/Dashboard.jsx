@@ -12,6 +12,7 @@ import {
   LineChartWidget,
   PieChartWidget,
 } from "../components/ChartWidgets/LineChartWidget";
+import { useTranslation } from "react-i18next";
 
 const lineData = [
   { label: "Mon", value: 1200 },
@@ -38,6 +39,7 @@ const barData = [
 const barColors = ["#722ed1", "#13c2c2", "#fa541c", "#52c41a"];
 
 export default function Dashboard() {
+  const { t } = useTranslation();
   const metrics = [
     {
       title: "Total Revenue",
@@ -76,7 +78,7 @@ export default function Dashboard() {
   return (
     <>
       <div className="dashboard-container">
-        <h2 className="dashboard-title">Welcome to the Dashboard</h2>
+        <h2 className="dashboard-title">{t("welcome")}</h2>
         <Row gutter={[16, 16]}>
           {metrics.map((metric, index) => (
             <Col key={index} xs={24} sm={12} md={12} lg={6}>

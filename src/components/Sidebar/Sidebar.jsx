@@ -39,22 +39,23 @@ const menuItems = [
       { name: "Product List", icon: <FaList />, path: "/products/list" },
     ],
   },
+
+  {
+    name: "Orders",
+    icon: <FaShoppingCart />,
+    path: "/orders/list",
+  },
+  {
+    name: "Settings",
+    icon: <FaCog />,
+    path: "/settings",
+  },
   {
     name: "Support",
     icon: <FaLifeRing />,
     children: [
       { name: "Ticket List", icon: <FaList />, path: "/support/tickets" },
     ],
-  },
-  {
-    name: "Orders",
-    icon: <FaShoppingCart />,
-    path: "/orders",
-  },
-  {
-    name: "Settings",
-    icon: <FaCog />,
-    path: "/settings",
   },
 ];
 
@@ -93,9 +94,9 @@ export default function Sidebar() {
     setOpenMenu((prev) => (prev === name ? null : name));
   };
 
-const isChildActive = (children) => {
-  return children.some((child) => location.pathname.startsWith(child.path));
-};
+  const isChildActive = (children) => {
+    return children.some((child) => location.pathname.startsWith(child.path));
+  };
 
   return (
     <div className={`sidebar ${collapsed ? "collapsed" : ""}`}>

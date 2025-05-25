@@ -4,18 +4,21 @@
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     overflow-x: auto;
+    width: 100%;
+    max-width: 90vw;
+    margin-right: 100px;
 }
 
 .custom-ant-table .ant-table-thead>tr>th {
     background-color: #f0f2f5;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     color: #111;
 }
 
 .custom-ant-table .ant-table-tbody>tr>td {
-    font-size: 13px;
+    font-size: 12px;
     padding: 10px 12px;
 }
 
