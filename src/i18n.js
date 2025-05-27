@@ -12,7 +12,7 @@ i18n
     fallbackLng: "en",
     supportedLngs: ["en", "hi"],
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json",
+      loadPath: "/EcommerceAdmin/locales/{{lng}}/translation.json",
     },
     detection: {
       order: ["localStorage", "navigator"],

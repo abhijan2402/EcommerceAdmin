@@ -1,4 +1,3 @@
-// src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
@@ -11,15 +10,16 @@ import Vendors from "./pages/Users/Vendors";
 import Customers from "./pages/Users/Customers";
 import Delivery from "./pages/Users/Delivery";
 import OrderList from "./pages/Orders/OrderList";
+import CreateProduct from "./pages/Product/CreateProduct";
+import TicketList from "./pages/TicketList/TicketList";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/EcommerceAdmin">
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
 
-        {/* Protected layout wrapper with nested routes */}
         <Route
           path="/"
           element={
@@ -33,7 +33,9 @@ export default function App() {
           <Route path="users/customer" element={<Customers />} />
           <Route path="users/delivery" element={<Delivery />} />
           <Route path="products/list" element={<ProductList />} />
+          <Route path="products/create" element={<CreateProduct />} />
           <Route path="orders/list" element={<OrderList />} />
+          <Route path="support/tickets" element={<TicketList />} />
           <Route path="settings" element={<Settings />} />
           <Route path="*" element={<Dashboard />} />
         </Route>

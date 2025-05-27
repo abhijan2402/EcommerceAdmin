@@ -44,11 +44,6 @@ export default function Topbar() {
               fontSize: "16px",
             }}
           >
-            {/* <img
-              src={lang.icon}
-              alt={lang.label}
-              style={{ width: "20px", height: "14px", objectFit: "cover" }}
-            /> */}
             {lang.label}
           </span>
         </Menu.Item>
@@ -67,12 +62,7 @@ export default function Topbar() {
         <Dropdown overlay={languageMenu} placement="bottomRight">
           <span className="lang-dropdown">
             <Space>
-              {/* <img
-                src={currentLang.icon}
-                alt={currentLang.label}
-                style={{ width: "20px", height: "14px", objectFit: "cover" }}
-              /> */}
-              <GlobalOutlined/>
+              <GlobalOutlined />
               {currentLang.code}
               <DownOutlined />
             </Space>
